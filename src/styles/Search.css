@@ -1,0 +1,54 @@
+.searchBar {
+  padding: 2rem;
+  padding-top: 5.5rem;
+}
+
+.searchBar form {
+  background-color: white;
+  padding: 1rem;
+}
+
+.searchBar form h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.searchFields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.searchButton {
+  align-self: center;
+  padding: 0 2rem;
+}
+
+.searchButton button {
+  padding: 8px 2rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 1250px) {
+  .searchFields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .searchFields {
+    grid-template-columns: 1fr;
+  }
+
+  .searchButton {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    padding: 1rem;
+    padding-top: 5.5rem;
+  }
+}

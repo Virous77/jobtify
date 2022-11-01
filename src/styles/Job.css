@@ -1,0 +1,137 @@
+.jobsContainerBar h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.jobsCount {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.jobList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.jobBar {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+.topBar {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.jobLogo {
+  background-color: rgb(218, 2, 2);
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.jobTitle h5 {
+  text-transform: capitalize;
+  margin-bottom: -0.2rem;
+  font-size: 1.1rem;
+}
+
+.jobTitle p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.contentBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.location p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(72, 1, 1);
+  text-transform: capitalize;
+}
+
+.location span {
+  font-size: 0.9rem;
+}
+
+.jobStatus p {
+  border-radius: 2px;
+  font-size: 0.75rem;
+  color: white;
+  text-transform: capitalize;
+  padding: 0 0.4rem;
+  width: fit-content;
+}
+
+.dec {
+  background-color: rgb(253, 71, 71);
+}
+
+.int {
+  background-color: rgb(112, 112, 252);
+}
+
+.pend {
+  background-color: rgb(202, 202, 2);
+}
+
+.jobAction {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.jobAction button {
+  padding: 3px 1rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.edit button {
+  background-color: skyblue;
+}
+
+.delete button {
+  background-color: rgb(115, 113, 113);
+}
+
+@media (max-width: 1200px) {
+  .jobList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobList {
+    padding: 1rem;
+  }
+
+  .jobBar {
+    padding: 1rem;
+  }
+}

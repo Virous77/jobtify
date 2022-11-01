@@ -1,0 +1,36 @@
+.formInput select {
+  border: 2px solid rgb(218, 2, 2);
+  padding: 8px;
+  font-size: 1rem;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 4px;
+}
+
+.formInput option {
+  text-transform: capitalize;
+}
+
+.formsButtons {
+  padding: 0 2rem;
+}
+
+.formsButtons button {
+  padding: 8px 2rem;
+  width: 28.6%;
+  border-radius: 2px;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1250px) {
+  .formsButtons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .formsButtons {
+    padding: 0;
+  }
+}

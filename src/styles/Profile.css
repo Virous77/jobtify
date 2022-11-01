@@ -1,0 +1,68 @@
+.profileBar {
+  padding: 2rem;
+  padding-top: 5.5rem;
+}
+
+.profileHead {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profileHead h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.profileBar form {
+  background-color: white;
+  padding: 1rem;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.formsButton {
+  padding: 0 2rem;
+}
+
+.formsButton button {
+  padding: 8px 2rem;
+  width: 28.6%;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+@media (max-width: 1250px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formsButton button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .formsButton {
+    padding: 0;
+  }
+
+  .formsButton button {
+    width: 100%;
+  }
+
+  .profileBar {
+    padding: 2rem 1rem;
+    padding-top: 5.5rem;
+  }
+
+  .profileHead {
+    margin-bottom: 1rem;
+  }
+}

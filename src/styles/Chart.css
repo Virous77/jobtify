@@ -1,0 +1,25 @@
+.chartBar {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+}
+
+.chartBar h4 {
+  margin-bottom: 1rem;
+}
+
+.chartBar button {
+  color: blue;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .chartBar {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,114 @@
+.mainStatsBar {
+  padding: 2rem;
+  padding-top: 5.5rem;
+}
+
+.statsBar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pending,
+.interview,
+.declined {
+  background-color: white;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.statsInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statsBar h1 {
+  font-size: 2rem;
+  color: whitesmoke;
+  border-radius: 2px;
+}
+
+.pending h1 {
+  color: rgb(202, 202, 2);
+}
+
+.interview h1 {
+  color: rgb(112, 112, 252);
+}
+
+.declined h1 {
+  color: rgb(253, 71, 71);
+}
+
+.pendingIcon {
+  font-size: 1.7rem;
+  color: rgb(202, 202, 9);
+  background-color: rgb(249, 249, 163);
+  width: 35px;
+  height: 25px;
+  padding: 0.2rem;
+}
+
+.interviewIcon {
+  font-size: 1.7rem;
+  color: rgb(112, 112, 252);
+  background-color: rgb(161, 161, 249);
+  width: 35px;
+  height: 25px;
+  padding: 0.2rem;
+}
+
+.declinedIcon {
+  font-size: 1.7rem;
+  color: rgb(253, 71, 71);
+  background-color: rgb(254, 142, 142);
+  width: 35px;
+  height: 25px;
+  padding: 0.2rem;
+}
+
+.pending {
+  border-bottom: 5px solid rgb(202, 202, 2);
+}
+
+.interview {
+  border-bottom: 5px solid rgb(112, 112, 252);
+}
+
+.declined {
+  border-bottom: 5px solid rgb(253, 71, 71);
+}
+
+.statsBar p {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1080px) {
+  .statsBar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .mainStatsBar {
+    padding-top: 5.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .statsBar {
+    grid-template-columns: 1fr;
+  }
+
+  .mainStatsBar {
+    padding: 1rem;
+    padding-top: 5.5rem;
+  }
+}

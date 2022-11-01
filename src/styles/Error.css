@@ -1,0 +1,21 @@
+.pageNotFoundBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.pageNotFoundBar img {
+  width: 20rem;
+  margin-bottom: 0.4rem;
+}
+
+.notFound {
+  text-align: center;
+}
+
+.notFound button {
+  margin-top: 2rem;
+}

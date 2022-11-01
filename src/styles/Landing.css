@@ -1,0 +1,114 @@
+.landingBar {
+  height: 100vh;
+}
+
+.landingBar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 7rem;
+  background-color: white;
+}
+
+nav img {
+  width: 12rem;
+}
+
+.homeBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 6rem;
+  padding: 1rem 7rem;
+}
+
+.leftBox h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  letter-spacing: 1.2px;
+  color: rgb(204, 6, 6);
+}
+
+.leftBox span {
+  font-size: 0.75rem;
+  margin-top: -0.7rem;
+  display: block;
+  letter-spacing: 0.4px;
+}
+
+.leftBox p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rightBox {
+  width: 100%;
+  text-align: end;
+}
+
+.rightBox img {
+  width: 80%;
+  height: 420px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.homeButton button {
+  padding: 8px 2rem;
+  width: auto;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  background: rgb(218, 2, 2);
+  border: transparent;
+  border-radius: 10px;
+  padding: 0.42rem 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: rgb(186, 2, 2);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .landingBar nav {
+    padding: 1rem 3rem;
+  }
+
+  .rightBox img {
+    width: 100%;
+  }
+
+  .homeBox {
+    padding: 1rem 3rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .homeBox {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeBox {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  .landingBar nav {
+    padding: 1rem;
+  }
+
+  .landingBar {
+    height: auto;
+  }
+}
